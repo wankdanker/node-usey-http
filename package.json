@@ -5,11 +5,37 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Dan VerWeire",
+  "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.10.0",
+    "compression": "^1.2.2",
+    "connect-query": "^0.2.0",
+    "cookie-parser": "^1.3.3",
+    "express-optimized": "git://github.com/mscdex/express-optimized",
+    "express-session": "^1.9.3",
     "methods": "^1.1.0",
-    "usey": "0.0.2"
+    "path-to-regexp": "^1.0.1",
+    "response-time": "^2.2.0",
+    "serve-static": "^1.7.1",
+    "usey": "0.0.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "description": "An express clone with usey at its core",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wankdanker/node-usey-http.git"
+  },
+  "keywords": [
+    "express",
+    "http",
+    "router",
+    "server",
+    "framework",
+    "middleware"
+  ],
+  "bugs": {
+    "url": "https://github.com/wankdanker/node-usey-http/issues"
+  },
+  "homepage": "https://github.com/wankdanker/node-usey-http"
 }
