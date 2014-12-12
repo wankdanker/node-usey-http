@@ -8,5 +8,7 @@ all:
 	@./run 50 middleware
 	@./run 100 middleware
 	@echo
+	@./run express routes
+	@./run usey-http routes
 
 .PHONY: all
