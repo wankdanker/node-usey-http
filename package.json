@@ -17,7 +17,7 @@
     "path-to-regexp": "^1.0.1",
     "response-time": "^2.2.0",
     "serve-static": "^1.7.1",
-    "usey": "0.0.7"
+    "usey": "^1.0.1"
   },
   "devDependencies": {},
   "description": "An express clone with usey at its core",
