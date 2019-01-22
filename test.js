@@ -44,5 +44,6 @@ app2.get('/page/:id', function (req, res, next) {
 		url : req.url
 		, originalUrl : req.originalUrl
 		, params : req.params
+		, now : Date.now()
 	});
 })
