@@ -37,7 +37,7 @@ app.mount('/test', app2);
 
 app.use(platform._404());
 
-app.listen(1337);
+// app.listen(1337);
 
 app2.get('/page/:id', function (req, res, next) {
 	res.json({
