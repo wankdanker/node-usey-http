@@ -25,6 +25,10 @@ app.get('/xlsx', function (req, res, next) {
 	res.xlsx(obj);
 });
 
+app.get('/send', function (req, res, next) {
+	res.send('./package.json');
+});
+
 app.get('/xml', function (req, res, next) {
 	res.xml(obj);
 });
@@ -46,4 +50,4 @@ app2.get('/page/:id', function (req, res, next) {
 		, params : req.params
 		, now : Date.now()
 	});
-})
+});

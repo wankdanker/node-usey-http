@@ -21,11 +21,11 @@
     "object-to-xml": "^2.0.0",
     "path-to-regexp": "^1.7.0",
     "response-time": "^2.3.2",
+    "send": "^0.17.1",
     "serve-static": "^1.13.2",
     "tableify": "^1.1.0",
     "usey": "^1.7.0"
   },
-  "devDependencies": {},
   "description": "An express clone with usey at its core",
   "repository": {
     "type": "git",
