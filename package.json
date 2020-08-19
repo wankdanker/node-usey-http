@@ -1,6 +1,6 @@
 {
   "name": "usey-http",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
