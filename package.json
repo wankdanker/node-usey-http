@@ -42,5 +42,8 @@
   "bugs": {
     "url": "https://github.com/wankdanker/node-usey-http/issues"
   },
-  "homepage": "https://github.com/wankdanker/node-usey-http"
+  "homepage": "https://github.com/wankdanker/node-usey-http",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }
