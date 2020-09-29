@@ -52,7 +52,7 @@ app.get('/send-file-not-found-no-callback', function (req, res, next) {
 });
 
 app.get('/xml', function (req, res, next) {
-	res.xml(obj);
+	res.xml({ result : obj });
 });
 
 app.get('/tablify', function (req, res, next) {
