@@ -10,9 +10,9 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
-    "connect-query": "^0.2.0",
+    "connect-query": "^1.0.0",
     "cookie-parser": "^1.4.5",
-    "cookies": "^0.7.3",
+    "cookies": "^0.8.0",
     "cors": "^2.8.5",
     "etag": "^1.8.1",
     "express-session": "^1.17.1",
@@ -25,7 +25,7 @@
     "send": "^0.17.1",
     "serve-favicon": "^2.5.0",
     "serve-static": "^1.14.1",
-    "tableify": "^1.1.0",
+    "tableify": "^1.1.1",
     "usey": "^1.9.3"
   },
   "description": "An express clone with usey at its core",
