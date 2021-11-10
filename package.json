@@ -20,7 +20,7 @@
     "json2xls-xml": "0.0.14",
     "methods": "^1.1.2",
     "object-to-xml": "^2.0.0",
-    "path-to-regexp": "^1.8.0",
+    "path-to-regexp": "^6.2.0",
     "response-time": "^2.3.2",
     "send": "^0.17.1",
     "serve-favicon": "^2.5.0",
