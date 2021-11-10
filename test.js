@@ -13,6 +13,8 @@ var obj = {
 	, boolean : true
 };
 
+app.use(platform.queryParser());
+
 app.get('/health-check', function a (req, res, next) {
 	res.end('OK');
 });
@@ -67,6 +69,38 @@ app.get('/async', async function l (req, res) {
 app.get('/async', async function m (req, res, next) {
 	//this will not resolve by itself, next must be called
 	console.log('here2');
+});
+
+app.all(/\/([^\/]*)\/([0-9]{13}).([a-z]*)/, function (req, res, next) {
+	res.json({
+		params: req.params
+		, query : req.query
+	})
+});
+
+app.all('/:slug([^\/]*)/:upc([0-9]{12})', function (req, res, next) {
+	res.json({
+		params: req.params
+		, query : req.query
+	})
+});
+
+app.all('/test-:name', function (req, res, next) {
+	res.json({
+		params: req.params
+		, query : req.query
+	})
+});
+
+//http://127.0.0.1:1337/customer/address/shipping/1234/update
+app.all('/customer/:what/(.*)', (req, res, next) => next());
+app.all('/customer/address/:type/(.*)', (req, res, next) => next());
+app.all('/customer/address/:type/:action', (req, res, next) => next());
+app.all('/customer/address/:type/:address_id(\\d+)/:action', function (req, res, next) {
+	res.json({
+		params: req.params
+		, query : req.query
+	}) 
 });
 
 app.mount('/test', app2);
